@@ -95,3 +95,12 @@
     transform: translateX(0);
   }
 }
+
+/* otp */
+
+.inputbox{
+  height:1rem;
+  width:1rem;
+  margin:0.5rem;
+  padding:0.5rem;
+}
