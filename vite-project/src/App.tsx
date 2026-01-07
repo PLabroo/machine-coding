@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ReactToast from "./components/react-toast";
 import Otp from "./components/otp";
+import StepperParent from "./components/stepper";
 
 const quesList = [
   {
@@ -15,6 +16,12 @@ const quesList = [
     ques: "OTP",
     path: "/otp",
     component: <Otp />,
+  },
+  {
+    id: 2,
+    ques: "Stepper",
+    path: "/stepper",
+    component: <StepperParent />,
   },
 ];
 

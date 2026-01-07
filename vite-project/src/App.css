@@ -104,3 +104,53 @@
   margin:0.5rem;
   padding:0.5rem;
 }
+
+/* Stepper */
+.step-container {
+  margin-bottom: 2rem;
+  display: flex;
+  gap:5rem
+}
+.step {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.index {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: gray;
+  color: white;
+}
+
+.active {
+  background-color: #5899fe;
+  color:black
+}
+
+.line {
+  height:2rem;
+  background-color: black;
+  width:1px;
+  position: absolute;
+  top:2rem;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.box-info {
+  border-radius: 1rem;
+  padding:2rem;
+  border:1px solid black;
+  margin-bottom: 1rem;
+}
