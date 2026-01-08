@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ReactToast from "./components/react-toast";
 import Otp from "./components/otp";
 import StepperParent from "./components/stepper";
+import Pagination from "./components/pagination";
 
 const quesList = [
   {
@@ -23,11 +24,17 @@ const quesList = [
     path: "/stepper",
     component: <StepperParent />,
   },
+  {
+    id: 3,
+    ques: "Pagination",
+    path: "/pagination",
+    component: <Pagination />,
+  },
 ];
 
 function Home() {
   return (
-    <div>
+    <div className="">
       <p>Machine Coding Questions</p>
       <ol>
         {quesList.map((item) => (
