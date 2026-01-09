@@ -4,6 +4,7 @@ import ReactToast from "./components/react-toast";
 import Otp from "./components/otp";
 import StepperParent from "./components/stepper";
 import Pagination from "./components/pagination";
+import Carousel from "./components/carousel";
 
 const quesList = [
   {
@@ -30,6 +31,12 @@ const quesList = [
     path: "/pagination",
     component: <Pagination />,
   },
+  {
+    id: 4,
+    ques: "Carousel",
+    path: "/carousel",
+    component: <Carousel />,
+  }
 ];
 
 function Home() {
