@@ -5,6 +5,7 @@ import Otp from "./components/otp";
 import StepperParent from "./components/stepper";
 import Pagination from "./components/pagination";
 import Carousel from "./components/carousel";
+import VirtualizedList from "./components/virtualizedList";
 
 const quesList = [
   {
@@ -36,7 +37,13 @@ const quesList = [
     ques: "Carousel",
     path: "/carousel",
     component: <Carousel />,
-  }
+  },
+  {
+    id: 5,
+    ques: "Virtualized List",
+    path: "/virtualized_list",
+    component: <VirtualizedList />,
+  },
 ];
 
 function Home() {
