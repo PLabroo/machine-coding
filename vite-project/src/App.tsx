@@ -6,6 +6,7 @@ import StepperParent from "./components/stepper";
 import Pagination from "./components/pagination";
 import Carousel from "./components/carousel";
 import VirtualizedList from "./components/virtualizedList";
+import StarRating from "./components/starRating";
 
 const quesList = [
   {
@@ -43,6 +44,12 @@ const quesList = [
     ques: "Virtualized List",
     path: "/virtualized_list",
     component: <VirtualizedList />,
+  },
+  {
+    id: 6,
+    ques: "Star Rating",
+    path: "/star_rating",
+    component: <StarRating />,
   },
 ];
 
