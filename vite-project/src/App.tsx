@@ -7,6 +7,7 @@ import Pagination from "./components/pagination";
 import Carousel from "./components/carousel";
 import VirtualizedList from "./components/virtualizedList";
 import StarRating from "./components/starRating";
+import Autocomplete from "./components/autocomplete";
 
 const quesList = [
   {
@@ -50,6 +51,12 @@ const quesList = [
     ques: "Star Rating",
     path: "/star_rating",
     component: <StarRating />,
+  },
+  {
+    id: 7,
+    ques: "Search and Debounce",
+    path: "/search",
+    component: <Autocomplete />,
   },
 ];
 
