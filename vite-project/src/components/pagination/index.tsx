@@ -32,7 +32,7 @@ export default function Pagination() {
         {isLoading && <h1 className="text-black">Loading...</h1>}
         {!isLoading &&
           data.map((item) => (
-            <img src={item.download_url} alt="" className="flex-1" />
+            <img src={item.download_url} alt="" className="pagination-img flex-1" />
           ))}
       </div>
       <PaginationControls

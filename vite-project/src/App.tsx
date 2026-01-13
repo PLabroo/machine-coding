@@ -8,6 +8,7 @@ import Carousel from "./components/carousel";
 import VirtualizedList from "./components/virtualizedList";
 import StarRating from "./components/starRating";
 import Autocomplete from "./components/autocomplete";
+import InfiniteScroll from "./components/infiniteScroll";
 
 const quesList = [
   {
@@ -57,6 +58,12 @@ const quesList = [
     ques: "Search and Debounce",
     path: "/search",
     component: <Autocomplete />,
+  },
+  {
+    id: 8,
+    ques: "Infinite Scroll",
+    path: "/infinite-scroll",
+    component: <InfiniteScroll />,
   },
 ];
 
