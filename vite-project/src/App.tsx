@@ -9,6 +9,7 @@ import VirtualizedList from "./components/virtualizedList";
 import StarRating from "./components/starRating";
 import Autocomplete from "./components/autocomplete";
 import InfiniteScroll from "./components/infiniteScroll";
+import ProgressBar from "./components/progressBar";
 
 const quesList = [
   {
@@ -64,6 +65,12 @@ const quesList = [
     ques: "Infinite Scroll",
     path: "/infinite-scroll",
     component: <InfiniteScroll />,
+  },
+  {
+    id: 9,
+    ques: "Progress Bar",
+    path: "/progress-bar",
+    component: <ProgressBar />,
   },
 ];
 
