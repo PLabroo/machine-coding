@@ -11,6 +11,7 @@ import Autocomplete from "./components/autocomplete";
 import InfiniteScroll from "./components/infiniteScroll";
 import ProgressBar from "./components/progressBar";
 import Accordion from "./components/accordion";
+import StopWatch from "./components/stopWatch";
 
 const quesList = [
   {
@@ -78,6 +79,12 @@ const quesList = [
     ques: "Accordion",
     path: "/accordion",
     component: <Accordion />,
+  },
+  {
+    id: 11,
+    ques: "Stop Watch",
+    path: "/stop-watch",
+    component: <StopWatch />,
   },
 ];
 
