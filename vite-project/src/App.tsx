@@ -10,6 +10,7 @@ import StarRating from "./components/starRating";
 import Autocomplete from "./components/autocomplete";
 import InfiniteScroll from "./components/infiniteScroll";
 import ProgressBar from "./components/progressBar";
+import Accordion from "./components/accordion";
 
 const quesList = [
   {
@@ -71,6 +72,12 @@ const quesList = [
     ques: "Progress Bar",
     path: "/progress-bar",
     component: <ProgressBar />,
+  },
+  {
+    id: 10,
+    ques: "Accordion",
+    path: "/accordion",
+    component: <Accordion />,
   },
 ];
 
