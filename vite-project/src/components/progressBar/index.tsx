@@ -1,26 +1,54 @@
-import { useEffect, useState } from "react";
+import { useRef, useState, useCallback, useEffect } from "react";
 
 export default function ProgressBar() {
   const [bar, setBar] = useState(0);
   const [show, setShow] = useState(false);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  useEffect(() => {
-    if (!show) {
+  const toggleProgress = useCallback(() => {
+    if (show) {
+      // Hide: clear + reset
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
       setBar(0);
-      return;
+    } else {
+      // Show: reset + start
+      setBar(0);
     }
+    setShow(!show);
+  }, [show]);
 
-    const interval = setInterval(() => {
+  const startAnimation = useCallback(() => {
+    if (intervalRef.current) return;  // Prevent duplicates
+
+    intervalRef.current = setInterval(() => {
       setBar((prev) => {
         if (prev >= 100) {
-          clearInterval(interval);
+          if (intervalRef.current) {
+            clearInterval(intervalRef.current);
+            intervalRef.current = null;
+          }
+          return 100;
         }
-        return Math.min(prev + 5, 100);
+        return prev + 5;
       });
     }, 150);
+  }, []);
 
-    return () => clearInterval(interval);
-  }, [show]);
+  // ✅ Start animation when shown
+  useEffect(() => {
+    if (show) {
+      startAnimation();
+    }
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
+  }, [show, startAnimation]);  // Safe deps
 
   return (
     <>
@@ -35,9 +63,9 @@ export default function ProgressBar() {
       )}
       <button
         className="border p-3 cursor-pointer mx-auto block mt-4"
-        onClick={() => setShow(!show)}
+        onClick={toggleProgress}
       >
-        Toggle
+        {show ? "Stop" : "Start"}
       </button>
     </>
   );
