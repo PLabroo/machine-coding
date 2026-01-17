@@ -12,6 +12,7 @@ import InfiniteScroll from "./components/infiniteScroll";
 import ProgressBar from "./components/progressBar";
 import Accordion from "./components/accordion";
 import StopWatch from "./components/stopWatch";
+import FileExplorer1 from "./components/fileExplorer1";
 
 const quesList = [
   {
@@ -85,6 +86,12 @@ const quesList = [
     ques: "Stop Watch",
     path: "/stop-watch",
     component: <StopWatch />,
+  },
+  {
+    id: 12,
+    ques: "File Explorer 1",
+    path: "/file-explorer-1",
+    component: <FileExplorer1 />,
   },
 ];
 
