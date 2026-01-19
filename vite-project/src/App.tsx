@@ -13,6 +13,7 @@ import ProgressBar from "./components/progressBar";
 import Accordion from "./components/accordion";
 import StopWatch from "./components/stopWatch";
 import FileExplorer1 from "./components/fileExplorer1";
+import GridColoring from "./components/gridColoring";
 
 const quesList = [
   {
@@ -92,6 +93,12 @@ const quesList = [
     ques: "File Explorer 1",
     path: "/file-explorer-1",
     component: <FileExplorer1 />,
+  },
+  {
+    id: 13,
+    ques: "Grid Coloring",
+    path: "/grid-coloring",
+    component: <GridColoring />,
   },
 ];
 

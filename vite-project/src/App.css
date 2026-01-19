@@ -214,3 +214,9 @@
 .right-btn {
   right: 20%;
 }
+
+/* grid-coloring */
+
+.grid-color-cell-active {
+  background-color: aqua;
+}
