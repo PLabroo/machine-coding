@@ -14,6 +14,7 @@ import Accordion from "./components/accordion";
 import StopWatch from "./components/stopWatch";
 import FileExplorer1 from "./components/fileExplorer1";
 import GridColoring from "./components/gridColoring";
+import TicTacToe from "./components/ticTacToe";
 
 const quesList = [
   {
@@ -99,6 +100,12 @@ const quesList = [
     ques: "Grid Coloring",
     path: "/grid-coloring",
     component: <GridColoring />,
+  },
+   {
+    id: 14,
+    ques: "Tic Tac Toe",
+    path: "/tic-tac-toe",
+    component: <TicTacToe />,
   },
 ];
 
