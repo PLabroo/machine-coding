@@ -15,6 +15,8 @@ import StopWatch from "./components/stopWatch";
 import FileExplorer1 from "./components/fileExplorer1";
 import GridColoring from "./components/gridColoring";
 import TicTacToe from "./components/ticTacToe";
+import SnakeGame from "./components/snakeGame";
+import TabChange from "./components/tabChange";
 
 const quesList = [
   {
@@ -101,11 +103,23 @@ const quesList = [
     path: "/grid-coloring",
     component: <GridColoring />,
   },
-   {
+  {
     id: 14,
     ques: "Tic Tac Toe",
     path: "/tic-tac-toe",
     component: <TicTacToe />,
+  },
+  {
+    id: 15,
+    ques: "Snake Game",
+    path: "/snake-game",
+    component: <SnakeGame />,
+  },
+  {
+    id: 16,
+    ques: "Tab Change",
+    path: "/tab-change",
+    component: <TabChange />,
   },
 ];
 
