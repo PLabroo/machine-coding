@@ -17,6 +17,7 @@ import GridColoring from "./components/gridColoring";
 import TicTacToe from "./components/ticTacToe";
 import SnakeGame from "./components/snakeGame";
 import TabChange from "./components/tabChange";
+import TodoApp from "./components/todo-app";
 
 const quesList = [
   {
@@ -120,6 +121,12 @@ const quesList = [
     ques: "Tab Change",
     path: "/tab-change",
     component: <TabChange />,
+  },
+  {
+    id: 16,
+    ques: "Todo App",
+    path: "/tood-app",
+    component: <TodoApp />,
   },
 ];
 
