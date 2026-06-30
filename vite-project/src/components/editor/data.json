@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "public",
+    "isFolder": true,
+    "children": []
+  },
+  {
+    "id": 2,
+    "name": "src",
+    "isFolder": true,
+    "children": [
+      {
+        "id": 5,
+        "name": "components",
+        "isFolder": true,
+        "children": [
+          {
+            "id": 6,
+            "name": "App.jsx",
+            "isFolder": false
+          },
+          {
+            "id": 7,
+            "name": "buttons",
+            "isFolder": true,
+            "children": [
+              {
+                "id": 8,
+                "name": "Textfield.jsx",
+                "isFolder": false
+              },
+              {
+                "id": 9,
+                "name": "RadiBtn.jsx",
+                "isFolder": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "styles.css",
+    "isFolder": false
+  },
+  {
+    "id": 4,
+    "name": "package.json",
+    "isFolder": false
+  }
+]

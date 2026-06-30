@@ -18,6 +18,9 @@ import TicTacToe from "./components/ticTacToe";
 import SnakeGame from "./components/snakeGame";
 import TabChange from "./components/tabChange";
 import TodoApp from "./components/todo-app";
+import MemoryGame from "./components/memoryGame";
+import TicketBooking from "./components/ticketBooking";
+import Editor from "./components/editor";
 
 const quesList = [
   {
@@ -127,6 +130,24 @@ const quesList = [
     ques: "Todo App",
     path: "/tood-app",
     component: <TodoApp />,
+  },
+  {
+    id: 17,
+    ques: "Memory Game",
+    path: "/memory-game",
+    component: <MemoryGame />,
+  },
+  {
+    id: 18,
+    ques: "Ticket Booking",
+    path: "/ticket-booking",
+    component: <TicketBooking />,
+  },
+  {
+    id: 19,
+    ques: "Editor",
+    path: "/editor",
+    component: <Editor />,
   },
 ];
 
